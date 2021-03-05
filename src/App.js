@@ -1,8 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import NasaPicture from './components/NasaPicture';
-import NasaHome from './components/NasaHome';
-import NavBar from './components/NavBar';
 import './App.css';
 
 class App extends React.Component {
@@ -31,15 +28,9 @@ class App extends React.Component {
       <header className="App-header">
        <h1>React NASA API</h1>
       </header>
-      <Router>
-        <Route exact path='/'>
+      
         <NasaPicture picture={picture}/>
-          
-        </Route>
-<Route Path='/picture/:index'>
-  
-</Route>
-      </Router>
+      
     </div>
   );
 }
